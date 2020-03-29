@@ -1,0 +1,319 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.aba1 {
+	background-color: red;
+	padding: 10px;
+}
+
+#bg, #bg2, #bg3, #bg4, #bg5 {
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.8);
+	color: red;
+	position: fixed;
+	display: none;
+	z-index: 2;
+}
+
+#bg:target {
+	display: block;
+}
+
+#bg:target ~ .box {
+	top: 80px;
+	transition: all 1s;
+	transition-delay: .2s;
+	z-index: 3;
+}
+
+@keyframes fundomexe {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.box, .box2, .box3, .box4, .box5 {
+	width: 900px;
+	/*height: 90vh;*/
+	height: 480px;
+	position: fixed;
+	margin-left: -308px;
+	left: 38%;
+	top: -2999px;
+	background-color: #fff;
+	border: 7px solid rgba(90,30,40, 1);
+	/*box-shadow: 2px 2px 10px 3px red;*/
+	padding-bottom: 10px;
+	padding: 10px;
+	overflow-y: auto;
+}
+
+.fechar {
+	text-align: right;
+	width: 100%;
+	/*background-color: black;*/
+}
+
+.close, .close2, .close3, .close4, .close5 {
+	box-sizing: border-box;
+	text-decoration: none;
+	font-weight: bolder;
+	color: black;
+}
+
+.close:hover, .close2:hover, .close3:hover, .close4:hover, .close5:hover {
+	transition-delay: 1s all;
+	transition: 0.2s;
+	color: red;
+}
+
+.Teorico{
+	width: 49%;
+	/*height: 100%;*/
+	border-right: 1px solid #ccc;
+    font-size: 16px;
+    float: left;
+    overflow-y: auto;
+}
+
+.Pratico{
+	width: 50%;
+    font-size: 16px;
+    float: left;
+}
+
+#bg2:target {
+	display: block;
+}
+
+#bg2:target ~ .box2 {
+	top: 90px;
+	transition: all 1s;
+	transition-delay: .2s;
+	z-index: 3;
+}
+
+div#Teorico2 {
+	width: 50%;
+	text-align: center;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	border-right: 1px solid #ccc;
+	float: left;
+	font: 93% arial;
+}
+
+div#Pratico2 {
+	width: 50%;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+	float: left;
+	font: 93% arial;
+}
+
+#bg3:target {
+	display: block;
+}
+
+#bg3:target ~ .box3 {
+	top: 90px;
+	transition: all 1s;
+	transition-delay: .2s;
+	z-index: 6;
+}
+
+div#Teorico3 {
+	width: 50%;
+	text-align: center;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	border-right: 1px solid #ccc;
+	float: left;
+	font: 93% arial;
+}
+div#Pratico3 {
+	width: 50%;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+	float: left;
+	font: 93% arial;
+}
+
+#explicaFator {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 4px;
+	resize: none;
+	outline: none;
+}
+
+/*Modal 4*/
+
+#bg4:target {
+	display: block;
+}
+
+#bg4:target ~ .box4 {
+	top: 90px;
+	transition: all 1s;
+	transition-delay: .2s;
+	z-index: 3;
+}
+
+div.left {
+	width: 50%;
+	text-align: ;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	border-right: 1px solid #ccc;
+	float: left;
+	font: 93% arial;
+}
+
+div.right {
+	width: 50%;
+	/*height: 100%;*/
+	text-align: ;
+	padding: 10px;
+	box-sizing: border-box;
+	float: left;
+	font: 93% arial;
+}
+
+.paepg {
+	padding: 10px;
+	border: 1px solid #ccc;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+.mostrarResultado {
+	width: 60%;
+	margin: auto;
+	padding: 5px 0px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 1px;
+}
+
+.botao-program {
+	padding: 3px 7px;
+	margin-top: 5px;
+	border: 1px solid #a99;
+	background-color: #a99;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+}
+
+.botao-program:hover {
+	opacity: 0.8;
+}
+
+.inp-program {
+	width: 200px;
+	height: 20px;
+	border-radius: 1px;
+	margin-top: 6px;
+	padding: 1px 3px;
+	border: 1px solid #ccc;
+	outline: none;
+	font: 80% arial;
+}
+
+.inp-program:focus {
+	border: 1px solid red;
+}
+
+.h2-pratico {
+	margin-top: 3%;
+	margin-bottom: 10px;
+}
+
+.h3-resultado {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	font: 100% arial;
+	font-weight: bold;
+}
+
+#bg5:target {
+	display: block;
+}
+
+#bg5:target ~ .box5 {
+	top: 90px;
+	transition: all 1s;
+	transition-delay: .2s;
+	z-index: 3;
+}
+
+
+.h1-teorico {
+	margin-top: ;
+}
+
+p {
+	margin: 5px;
+}
+
+
+.col-1 {
+	width: 8.33%;
+}
+.col-2 {
+	width: 16.66%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.33%;
+}
+.col-5 {
+	width: 41.66%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-7 {
+	width: 58.33%;
+}
+.col-8 {
+	width: 66.66%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.33%;
+}
+.col-11 {
+	width: 91.66%;
+}
+.col-11 {
+	width: 100%;
+}
+
+@media only screen and(max-width: 768px;) {
+	[class*="col-"] {
+		width: 100%;
+	}
+}

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Bheta</title>
+	<link rel="icon" href="images/calculadora.png">
+	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="2000">
+	<meta name="author" content="Sites Profissionais">
+	<meta name="description" content="Site para amantes de matematica">
+	<meta name="keywords" content="Matematica, exercicio matematica, exercicios, automatico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styleFooter.css">
+	<link rel="stylesheet" type="text/css" href="css/styleLado.css">
+	<link rel="stylesheet" type="text/css" href="css/styleModal.css">
+	<script type="text/javascript" src="js/codscript.js"></script>
+	<script type="text/javascript" src="js/pacoteTermometria.js"></script>
+</head>
+<body>
+<header class="cabecalho">
+	<div class="logo">
+		<a href=""><h1 class="logon">Bheta</h1></a>
+	</div>
+	<div class="botoesRight">
+		<a class="alinhar" href="#">Sobre</a>
+		<a class="alinhar" href="#">Ajuda?</a>
+		<button class="alinhar" id="buttonLogin">Login</button>
+	</div>
+
+
+</header>
+
+<section class="conteudo">
+	<div class="centro">
+		<div class="imagem">
+			<div class="geral">
+
+
+
+				<div class="contact-info">
+					<div class="option">
+						<img class="i" src="images/envelope-solid.svg">
+						<div class="text">Bheta@gmail.com</div>	
+					</div>
+
+					<div class="option">
+						<img class="i" src="images/map-marker-alt-solid.svg">
+						<div class="text">Global</div>	
+					</div>
+
+					<div class="option">
+						<img class="i" src="images/phone-volume-solid.svg">
+						<div class="text">+985391957</div>	
+					</div>
+				</div>
+				
+
+
+				
+				<h2 class="atv">Educação Matemática</h1>
+				<a href="#blocoCaixas"><button class="btn btn3">Exatas</button></a>
+				<p>A matemática é a única ciência exata em que nunca se sabe do que se está a falar nem se aquilo que se diz é verdadeiro.
+				</p>
+				<p>Sua maior fonte de aprendizado.
+				</p>
+			</div>
+		</div>
+		<div id="blocoCaixas" class="caixas">
+
+		<div class="caixa1" style="">
+			<h1 class="caixa1Text">Geometria Plana</h1>
+				<figure class="figureCaixa1" style="">
+					<img src="images/fotoProgram.jpg" width="100%" height="100%" class="imgCaixa" ">
+					<figcaption>
+					<p class="descricao"><a href="#bg" class="abrirModal">Começar</a></p>
+					
+
+					<div id="bg"></div>
+					<div class="box">
+
+						<div class="fechar">
+							<a href="#fechar" class="close"><h1>X</h1></a>
+						</div>
+
+						<div class="Teorico">
+							<h1 class="h1-teorico">Área de figuras planas</h1>
+							<p>As áreas das figuras planas medem o tamanho da superfície da figura. Desse modo, podemos pensar que quanto maior a superfície da figura, maior será sua área.</p>
+							<figure class="imgfiguras">
+								<img src="images/triangulo.gif" width="90px" height="106px;" class="alinhara">
+								<img src="images/q.gif" width="90px" height="96px;" class="alinhara">
+								<img src="images/retangulo.gif" width="90px" height="96px;" class="alinhara">
+								<img src="images/trapezio.gif" width="90px" height="96px;" class="alinhara">
+								<img src="images/losango.gif" width="90px" height="96px;" class="alinhara">
+								<img src="images/circulo.gif" width="90px" height="96px;" class="alinhara">
+							</figure>
+							<p>
+								A Geometria plana é a área da matemática que estuda as figuras planas. Ou seja, aquelas que possuem comprimento e largura, sendo figuras bidimensionais(duas dimensões).
+							</p>
+						</div>
+
+						<div class="Pratico">
+							<h2 class="h2-pratico" ">Prática</h2>
+							<input type="radio" id="cont1" class="aba1" name="abas" value="1" checked="">
+							<input type="radio" id="cont2" class="aba2" name="abas" value="2">
+							<input type="radio" id="cont3" class="aba3" name="abas" value="3">
+							<input type="radio" id="cont4" class="aba4" name="abas" value="4">
+							<input type="radio" id="cont5" class="aba5" name="abas" value="5">
+							<input type="radio" id="cont6" class="aba6" name="abas" value="6">
+		
+							<ul class="areas">
+								<li class="linhaAreas"><label for="cont1" class="editarRadio">Triângulo</label></li>
+								<li class="linhaAreas"><label for="cont2" class="editarRadio">Quadrado</label></li>
+								<li class="linhaAreas"><label for="cont3" class="editarRadio">Retângulo</label></li>
+								<li class="linhaAreas"><label for="cont4" class="editarRadio">Trapézio</label></li>
+								<li class="linhaAreas"><label for="cont5" class="editarRadio">Losango</label></li>
+								<li class="linhaAreas"><label for="cont6" class="editarRadio">Circulo</label></li>
+							</ul>
+
+							<div class="conT1">
+								<fieldset title="Tabela">
+								<table class="tabela">
+									<th>Informe os Valores = Triângulo</th>
+									<tr>
+										<td><input type="number" class="inp-program" id="alt" placeholder="Digite a base">
+									</tr>
+									<tr>
+										<td><input type="number" class="inp-program" id="base" placeholder="Digite a altura">
+									</tr>
+									<tr>
+										<td><button onclick="areaTriangulo()" class="botao-program">Enviar</button>
+									</tr>
+								</table>
+								</fieldset>
+
+								<h3 class="h3-resultado">Resultado</h3>
+								<div class="mostrarResultado">
+									<span id="mostrarResultadoo"></span>
+								</div>
+							</div>
+
+							<div class="conT2">
+								<fieldset title="Tabela">
+								<table class="tabela">
+									<th>Informe os Valores = Quadrado</th>
+									<tr>
+										<td><input type="number" class="inp-program" id="lado" placeholder="Digite o lado">
+									</tr>
+									<tr>
+										<td><button onclick="areaQuadrado()" class="botao-program">Enviar</button>
+									</tr>
+								</table>
+								</fieldset>
+
+								<h3 class="h3-resultado">Resultado</h3>
+								<div class="mostrarResultado">
+									<span id="mostrarResultado2"></span>
+								</div>
+							</div>
+
+							<div class="conT3">
+								<fieldset title="Tabela">
+								<table class="tabela">
+									<th>Informe os Valores = Retangulo</th>
+									<tr>
+										<td><input type="number" class="inp-program" id="baseR" placeholder="Digite a base">
+									</tr>
+									<tr>
+										<td><input type="number" class="inp-program" id="altR" placeholder="Digite a altura">
+									</tr>
+									<tr>
+										<td><button onclick="areaRetangulo()" class="botao-program">Enviar</button>
+									</tr>
+								</table>
+								</fieldset>
+
+								<h3 class="h3-resultado">Resultado</h3>
+								<div class="mostrarResultado">
+									<span id="mostrarResultado3"></span>
+								</div>
+							</div>
+
+							<div class="conT4">
+								<fieldset title="Tabela">
+								<table class="tabela">
+									<th>Informe os Valores = Trapézio</th>
+									<tr>
+										<td><input type="number" class="inp-program" id="baseM" placeholder="Digite a maior base">
+									</tr>
+									<tr>
+										<td><input type="number" class="inp-program" id="baseMn" placeholder="Digite a menor base">
+									</tr>
+									<tr>
+										<td><input type="number" class="inp-program" id="altT" placeholder="Digite a altura">
+									</tr>
+									<tr>
+										<td><button onclick="areaTrapezio()" class="botao-program">Enviar</button>
+									</tr>
+								</table>
+								</fieldset>
+
+								<h3 class="h3-resultado">Resultado</h3>
+								<div class="mostrarResultado">
+									<span id="mostrarResultado4"></span>
+								</div>
+							</div>
+							<div class="conT5">
+								<fieldset title="Tabela">
+									<table class="tabela">
+										<th>Informe os Valores = Losango</th>
+										<tr>
+											<td><input type="number" class="inp-program" id="diagoM" placeholder="Digite a diagonal maior">
+										</tr>
+
+										<tr>
+											<td><input type="number" class="inp-program" id="diagoMn" placeholder="Digite a diagonal menor">
+										</tr>
+
+										<tr>
+											<td><button onclick="areaLosango()" class="botao-program">Enviar</button>
+										</tr>
+									</table>
+								</fieldset>
+
+								<h3 class="h3-resultado">Resultado</h3>
+								<div class="mostrarResultado">
+									<span id="mostrarResultado5"></span>
+								</div>
+							</div>
+							<div class="conT6">
+								<fieldset title="Tabela">
+									<table class="tabela">
+										<th>Informe os Valores = Circulo</th>
+										<tr>
+											<td><input type="number" class="inp-program" id="raio" placeholder="Digite o raio">
+										</tr>
+
+										<tr>
+											<td><button onclick="areaCirculo()" class="botao-program">Enviar</button>
+										</tr>
+									</table>
+								</fieldset>
+
+								<h3 class="h3-resultado">Resultado</h3>
+								<div class="mostrarResultado">
+									<span id="mostrarResultado6"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</figcaption>
+				</figure>
+			</div>
+
+			<div class="caixa1">
+				<h1 class="caixa1Text">Termometria</h1>
+				<figure class="figureCaixa1">
+					<img src="images/fotoProgram.jpg" width="100%" height="100%" class="imgCaixa">
+					<figcaption>
+					<p class="descricao"><a href="#bg2" class="abrirModal">Começar</a></p>
+
+					<div id="bg2">
+					</div>
+					<div class="box2">
+						<div class="fechar"">
+							<a href="#fechar" class="close"><h1>X</h1></a>
+		                  
+		                   <div id="Teorico2">
+		                  		<h1 class="h1-teorico">Termometria</h1>
+		                  		<p>
+		                  			É uma parte da termologia que estuda a temperatura e suas formas pelas quais a mesma pode ser medida.
+		                  		</p><br>
+		                  		<p>
+		                  			C / 5 = F - 32 / 9 = k - 273 / 5
+		                  		</p><br>
+		                  		<p>
+		                  			C = Temperatura Celsius <br> F = Temperatura Fahrenheit <br> K = Temperatura Keilvin
+		                  		</p><br>	
+		                  		<p>
+		                  			Voltada para o estudo da temperatura, dos termômetros e das escalas termométricas.
+		                  		</p>
+		                   </div>
+
+		                   <div id="Pratico2">
+		                   	<h2 class="h2-pratico">Prática</h2>
+		                		<input type="radio" id="conv1" class="part1" name="abas" value="1">
+		                		<input type="radio" id="conv2" class="part2" name="abas" value="1">
+		                		<input type="radio" id="conv3" class="part3" name="abas" value="1">	
+								<ul class="areas">
+									<li class="linhaAreas"><label for="conv1" class="editarRadio">Celsius e Fahrenheit</label></li>
+									<li class="linhaAreas"><label for="conv2" class="editarRadio">Celsius e Kelvin</label></li>
+									<li class="linhaAreas"><label for="conv3" class="editarRadio">Kelvin e Fahrenheit</label></li>
+								</ul>
+								<div class="part1-cont1">
+									<input type="radio" id="conv11" class="part11" name="abas2" value="1">
+		                			<input type="radio" id="conv111" class="part111" name="abas2" value="2">
+		                			<ul class="areas">
+										<li class="linhaAreas"><label for="conv11" class="editarRadio">Celsius -> Fahrenheit</label></li>
+										<li class="linhaAreas"><label for="conv111" class="editarRadio">Fahrenheit -> Celsius</label></li>
+									</ul>
+									<div class="part11-cont11">
+										<table class="paepg">
+											<th>Informe o valor</th>
+											<tr>
+												<td><input type="number" class="inp-program" id="c" placeholder="temperatura em Celsius">
+											</tr>
+
+											<tr>
+												<td><button onclick="CelsiusParaFahreheit()" class="botao-program">Enviar</button>
+											</tr>
+										</table>
+
+										<h3 class="h3-resultado">Resultado</h3>
+										<div class="mostrarResultado">
+											<span id="mostrarResultadoCpF"></span>
+										</div>
+									</div>
+									<div class="part111-cont111">
+										<table class="paepg">
+											<th>Informe o valor</th>
+											<tr>
+												<td><input type="number" class="inp-program" id="f" placeholder="temperatura em Fahrenheit">
+											</tr>
+
+											<tr>
+												<td><button onclick="FahrenheitParaCelsius()" class="botao-program">Enviar</button>
+											</tr>
+										</table>
+
+										<h3 class="h3-resultado">Resultado</h3>
+										<div class="mostrarResultado">
+											<span id="mostrarResultadoFpC"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="part2-cont2">
+									<input type="radio" id="conv22" class="part22" name="abas2" value="1">
+		                			<input type="radio" id="conv222" class="part222" name="abas2" value="2">
+
+		                			<ul class="areas">
+										<li class="linhaAreas"><label for="conv22" class="editarRadio" >Celsius -> Kelvin</label></li>
+										<li class="linhaAreas"><label for="conv222" class="editarRadio" >Kelvin -> Celsius</label></li>
+									</ul>
+
+									<div class="part22-cont22">
+										<table class="paepg">
+											<th>Informe o valor</th>
+											<tr>
+												<td><input type="number" class="inp-program" id="cK" placeholder="temperatura em Celsius">
+											</tr>
+
+											<tr>
+												<td><button onclick="CelsiusParaKelvin()" class="botao-program">Enviar</button>
+											</tr>
+										</table>
+
+										<h3 class="h3-resultado">Resultado</h3>
+										<div class="mostrarResultado">
+											<span id="mostrarResultadoCpK"></span>
+										</div>
+									</div>
+
+									<div class="part222-cont222">
+										<table class="paepg">
+											<th>Informe o valor</th>
+											<tr>
+												<td><input type="number" class="inp-program" id="kC" placeholder="temperatura em Kelvin">
+											</tr>
+
+											<tr>
+												<td><button onclick="KelvinParaCelsius()" class="botao-program">Enviar</button>
+											</tr>
+										</table>
+
+										<h3 class="h3-resultado">Resultado</h3>
+										<div class="mostrarResultado">
+											<span id="mostrarResultadoKpC"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="part3-cont3">
+									<input type="radio" id="conv33" class="part33" name="abas2" value="1">
+		                			<input type="radio" id="conv333" class="part333" name="abas2" value="2">
+
+		                			<ul class="areas">
+										<li class="linhaAreas"><label for="conv33" class="editarRadio">Kelvin -> Fahrenheit</label></li>
+										<li class="linhaAreas"><label for="conv333" class="editarRadio">Fahrenhrit -> Kelvin</label></li>
+									</ul>
+
+									<div class="part33-cont33">
+										<table class="paepg">
+											<th>Informe o valor</th>
+											<tr>
+												<td><input type="number" class="inp-program" id="kF" placeholder="temperatura em Kelvin">
+											</tr>
+
+											<tr>
+												<td><button onclick="KelvinParaFahrenheit()" class="botao-program">Enviar</button>
+											</tr>
+										</table>
+
+										<h3 class="h3-resultado">Resultado</h3>
+										<div class="mostrarResultado">
+											<span id="mostrarResultadoKpF"></span>
+										</div>
+									</div>
+
+									<div class="part333-cont333">
+										<table class="paepg">
+											<th>Informe o valor</th>
+											<tr>
+												<td><input type="number" class="inp-program" id="fK" placeholder="temperatura em Fahrenheit">
+											</tr>
+
+											<tr>
+												<td><button onclick="FahrenheitParaKelvin()" class="botao-program">Enviar</button>
+											</tr>
+										</table>
+
+										<h3 class="h3-resultado">Resultado</h3>
+										<div class="mostrarResultado">
+											<span id="mostrarResultadoFpK"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</figcaption>
+				</figure>
+				
+			</div>
+
+			<div class="caixa1">
+				<h1 class="caixa1Text">Fatorial</h1>
+				<figure class="figureCaixa1">
+					<img src="images/fotoProgram.jpg" width="100%" height="100%" class="imgCaixa">
+					<figcaption>
+					<p class="descricao"><a href="#bg3" class="abrirModal">Começar</a></p>
+				
+
+					<div id="bg3"></div>
+					<div class="box3">
+						<div class="fechar">
+							<a href="#fechar" class="close"><h1>X</h1></a>
+						</div>
+						<div class="left">
+							<h1 class="h1-teorico">Fatorial</h1>
+							<p>
+								O conceito de <strong>fatorial</strong> é muito utilizado no estudo de arramjos e permutações, afim de facilitar os cáculos.
+							</p><br>
+							<p>
+								O fatorial de um número inteiro <i>m</i> não negativo, é indicado por <i>m!</i> (lê-se "m fatorial e") é definido pela relação:
+							</p><br>
+							<p>
+								Algumas definidas são:
+							</p><br>
+							<p>
+								1! = 1!<br>0! = 1
+							</p><br>
+							<h4>Exemplo:</h4><br>
+							<p>
+								3! = 3.2.1 = 6<br>4! = 4.2.3.1 = 24<br>6! = 6.5.4.3.2.1 = 720
+							</p>
+							<br>
+							<p>
+								Veja que o cálculo do fatorial se torna trabalhoso a media que <i>m</i> aumenta, veja: <br> <br> 10! = 10.9.8.7.6.5.4.3.2.1 = 3.628.800 <br>
+							</p>
+							<p>
+								Assim, podemos simplificar algumas cálculos, usando o artifíco de não calcular totalmente o fatorial, mas sim uma parte dele:<br><br> (n+n)! = (n+n) . n . (n-1) . (n-2)...3.2.1 = (n+1) . n!
+							</p>
+						</div>
+						<div class="right">
+							<h2 class="h2-pratico">Prática</h2>
+								<table class="paepg">
+									<th>Informe o valor</th>
+									<tr>
+										<td><input type="number" class="inp-program" id="fatorial" placeholder="Valor max: 170">
+									</tr>
+
+									<tr>
+										<td><button onclick="fatorial()" class="botao-program">Enviar</button>
+									</tr>
+								</table>
+							<h3 class="h3-resultado">Resultado</h3>
+							<div class="mostrarResultado">
+								<textarea id="explicaFator" cols="25" rows="5" readonly="" placeholder="Expressão"></textarea><br>
+								<span id="mostrarResultadobg3"></span>
+							</div>
+						</div>
+					</div>
+				</figcaption>
+				</figure>				
+			</div>
+
+			<div class="caixa1">
+				<h1 class="caixa1Text">PA e PG</h1>
+				<figure class="figureCaixa1">
+					<img src="images/fotoProgram.jpg" width="100%" height="100%" class="imgCaixa">
+					<figcaption>
+					<p class="descricao"><a href="#bg4" class="abrirModal">Começar</a></p>
+					
+
+					<div id="bg4"></div>
+					<div class="box4">
+						<div class="fechar">
+							<a href="#fechar" class="close"><h1>X</h1></a>
+						</div>
+							<div class="left">
+								<h1 class="h1-teorico">Progressão Aritimética(PA)</h1><br>
+								<p>
+									<b>Oque é: </b>Uma Progressão Aritimética, ou PA, nada mais é que uma sequência, um conjunto de números. Mas não é uma sequência qualquer: ela tem uma regra, um padrão para a formatação desses números.
+								</p>
+								<p><br>
+									<b>Regra: </b>Para formamos uma PA é nescessário 2 coisas: um termo inicial, e a razao que vai se permanecer constante. O proximo termo da razao e o termo anterior mais a razao.
+								</p>
+								<p>
+									<b>Ex.:</b> <br>Primeiro Termo &nbsp;(a<sub>1</sub>) = 2; <br>Segundo Termo (a<sub>2</sub>) = 2 + 3 = 5; <br>Terceiro Termo &nbsp;&nbsp;(a<sub>3</sub>) = 5 + 3 = 8;<br>......
+								</p>
+								<p>
+									<h4>Formula da PA</h4><br>
+									PA = a<sub>1</sub> + (n - 1) * r
+								</p><br>
+
+								<h1 class="h1-teorico">Progressao Geométrica(PG)</h1><br>
+								<p>
+									<b>Oque é: </b>Uma Progressão Geométrica, ou PG, é que uma sequência númerica onde cada termo é igual ao produto do seu antecessor com uma constante, chamada <sub>razao da PG</sub>.
+								</p><br>
+								<p>
+									A razão da PG equivale ao termo <b>q</b><br>.....
+								</p>
+								<p>
+									<h4>Formula da PG</h4><br>
+									PG = a<sub>1</sub> * q<sup>n - 1</sup>
+								</p>
+							</div>
+							<div class="right">
+								<h2 class="h2-pratico">Praticando PA e PG</h2>
+								<table class="paepg">
+									<tr>
+										<td>Primeiro Termo(a<sub>1</sub>): <td><input class="inp-program" type="number" id="a1">
+									</tr>
+									<tr>
+										<td>Razao(r/q): <td><input class="inp-program" type="number" id="r">
+									</tr>
+									<tr>
+										<td>Ultimo Termo(a<sub>n</sub>): <td><input class="inp-program" type="number" id="n">
+									</tr>
+									<tr>
+										<td colspan="2"><button class="botao-program" onclick="PAePG()">Exibir</button>
+									</tr>
+								</table>
+
+								<h3 class="h3-resultado">Resultado PA</h3>
+								<div class="mostrarResultado">
+									<span id="resultadoPA"></span>
+								</div>
+
+								<h3 class="h3-resultado">Resultado PG</h3>
+								<div class="mostrarResultado">
+									<span id="resultadoPG"></span>
+								</div>
+							</div>
+					</div>
+				</figcaption>
+				</figure>
+				
+			</div>
+
+			<div class="caixa1">
+				<h1 class="caixa1Text">Média Ponderada</h1>
+				<figure class="figureCaixa1">
+					<img src="images/fotoProgram.jpg" width="100%" height="100%" class="imgCaixa">
+					<figcaption>
+					<p class="descricao"><a href="#bg5" class="abrirModal">Começar</a></p>
+					
+
+					<div id="bg5"></div>
+					<div class="box5">
+						<div class="fechar">
+							<a href="#fechar" class="close"><h1>X</h1></a>
+						</div>
+
+							<div class="left">
+								<h1 class="h1-teorico">Média Ponderada</h1><br>
+								<p>
+									A média ponderada leva o peso de cada informação em consideração no cálculo. Seja ele um valor atribuído, seja uma quantidade. 
+								</p>
+								<p>
+									Mesmo sendo parecida com a média simples, na média ponderada, são atribuídos aos valores importâncias diferentes.
+								</p>
+								<h3>Calcular</h3>
+								<p>
+									A média ponderada é calculada por meio do somatório das multiplicações entre valores e pesos divididos pelo somatório dos pesos.
+								</p><br>	
+								<h4>Exemplo:</h4>
+								<p><br>	
+									Bim 1 = 7;<br>Bim 2 = 6;<br>Bim 3 = 8;<br>Bim 4 = 9;
+								</p><br>	
+								<p>
+									Mp = 7 * 1 + 6 * 2 + 8 * 3 + 9 * 4 <br>	_________________
+								</p>
+								<p>1 + 2 + 3 + 4</p>
+							</div>
+
+							<div class="right">
+								<h2 class="h2-pratico">Prática</h2>
+								<table class="paepg">
+									<tr>
+										<td>Nota 1:<td><input type="number" id="not1" class="inp-program">
+									</tr>
+									<tr>
+										<td>Nota 2:<td><input type="number" id="not2" class="inp-program">
+									</tr>
+									<tr>
+										<td>Nota 3:<td><input type="number" id="not3" class="inp-program">
+									</tr>
+									<tr>
+										<td>Nota 4:<td><input type="number" id="not4" class="inp-program">
+									</tr>
+
+									<tr>
+										<td colspan="2""><button class="botao-program" onclick="MediaP()">Exibir</button>
+									</tr>
+								</table>
+
+								<h3 class="h3-resultado">Resultado PA</h3>
+								<div class="mostrarResultado">
+									<span id="resultadoMP"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</figcaption>
+				</figure>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="team-section">
+		<h1>Nossa Equipe</h1>
+		<span class="border"></span>
+		<div class="ps">
+			<a href="#p1"><img src="images/Nalyson.jpg"></a>
+			<a href="#p2"><img src="images/janaina.jpg"></a>
+			<a href="#p3"><img src="images/italo.jpg"></a>
+		</div>
+		<div class="section" id="p1">
+			<span class="nome">Werick Nalyson</span>
+			<span class="border"></span>
+			<p>
+				Werick Nalyson, <strong>Doutorado</strong> na Universidade Federal do Ceará em Bioquimica. Mestrado no Instituro Federal de Educação. Bacharel em Biotecnologia e Computação. Participou de visitas internacionais e realizou estudos de importância Internacionalmente, Bacharel em Desenvolvimento de Websites.
+			</p>
+		</div>
+		<div class="section" id="p2">
+			<span class="nome">Naira Janaina</span>
+			<span class="border"></span>
+			<p>
+				Naira Janaina Gomes de Freitas, Doutorado na Área da Matemática. Doutorado em Ciências da Computação. Curso técnico de informática. Professora na Universidade Federal do Ceará. Perita em Informática na polícia federal. Conhecimentos vastos em desenvolvimento web.
+			</p>
+		</div>
+		<div class="section" id="p3">
+			<span class="nome">Italo Santos</span>
+			<span class="border"></span>
+			<p>
+				Italo dos Santos, possui doutorado na Univesidade federal do Céara (UFC) no campo da matemática aplicada. Escritor do livro matemática no meio computacional. Ramificações com a Programação Orientada a Objetos. Diretor do Centro de Aplicações de Matemática do Céara.
+			</p>
+		</div>
+	</div>
+</section>
+<footer style="text-align: center; background-color: rgba(90,30,40, 1); padding: 10px; color: #d79;">Direitos Reservados &copy;copyrhigt</footer>
+</body>
+</html>
